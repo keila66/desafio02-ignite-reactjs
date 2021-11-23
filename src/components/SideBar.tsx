@@ -1,12 +1,7 @@
 import { Button } from "./Button";
-import { GenreResponseProps } from "../types";
+import { GenreResponseProps, SideBarProps } from "../types";
 import { useState, useEffect } from "react";
 import { api } from "../services/api";
-
-interface SideBarProps {
-  setGenreId: (id: number) => void;
-  genreId: number;
-}
 
 export function SideBar({ genreId, setGenreId }: SideBarProps) {
   const [genres, setGenres] = useState<GenreResponseProps[]>([]);

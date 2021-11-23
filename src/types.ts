@@ -1,6 +1,6 @@
 export interface GenreResponseProps {
   id: number;
-  name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
+  name: "action" | "comedy" | "documentary" | "drama" | "horror" | "family";
   title: string;
 }
 
@@ -13,4 +13,14 @@ export interface MovieProps {
     Value: string;
   }>;
   Runtime: string;
+}
+
+export interface SideBarProps {
+  setGenreId: (id: number) => void;
+  genreId: number;
+}
+
+export interface ContentProps {
+  genreTitle: string;
+  moviesList: MovieProps[];
 }

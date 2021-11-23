@@ -1,13 +1,8 @@
 // import { useEffect, useState } from "react";
 import { MovieCard } from "./MovieCard";
-import { MovieProps } from "../types";
+import { MovieProps, ContentProps } from "../types";
 
 import "../styles/content.scss";
-
-interface ContentProps {
-  genreTitle: string;
-  moviesList: MovieProps[];
-}
 
 export function Content({ genreTitle, moviesList }: ContentProps) {
   return (
